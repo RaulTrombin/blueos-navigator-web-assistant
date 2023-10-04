@@ -36,4 +36,4 @@ LABEL tags='[\
   "robot"\
 ]'
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/bin/sh", "-c", "echo Starting navigator assistant...; ./navigator-assistant; sleep infinity"]
