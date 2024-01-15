@@ -4,5 +4,5 @@
 set -m
 
 echo "Starting navigator assistant..."
-./navigator-assistant
+./navigator-webassistant
 sleep infinity
