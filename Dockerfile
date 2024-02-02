@@ -27,7 +27,7 @@ LABEL authors='[\
     }\
 ]'
 LABEL company='{\
-  "about": "",\
+  "about": "Control navigator hardware using webservices",\
   "name": "Blue Robotics",\
   "email": "support@bluerobotics.com"\
 }'
