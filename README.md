@@ -1,6 +1,6 @@
 # BlueOS's Navigator Extension
 
-Navigator Assistant extension is a webserver that allows user to control navigator hardware.
+Navigator Webassistant extension is a webserver that allows user to control navigator hardware.
 This application uses the navigator-assistant to interface with navigator board, and users can control it from Websocket and RestAPI.
 
 ## Instructions
@@ -14,7 +14,7 @@ blueos.local/tools/extensions-manager
 Parameters:
 
 ```
-raulelektron.blueos_navigator_assistant
+raulelektron.blueos_navigator_webassistant
 
 Navigator Assistant
 
@@ -37,9 +37,9 @@ latest
 }
 ```
 
-You can also run Navigator Assistant locally or on other extensions. Please check [navigator-assistant].
+You can also run Navigator Assistant locally or on other extensions. Please check [navigator-web-assistant].
 
 You can also use the Jupyter extension to try some fast python and websocket applications.
 
 
-[navigator-assistant]: https://github.com/RaulTrombin/navigator-assistant
+[navigator-web-assistant]: https://github.com/RaulTrombin/navigator-web-assistant
