@@ -4,6 +4,8 @@ RUN apk add --no-cache bash
 
 COPY files/* /
 
+LABEL version="0.0.0"
+
 # Add docker configuration
 LABEL permissions='{\
   "ExposedPorts": {\
