@@ -12,8 +12,8 @@ LABEL permissions='{\
     "8080/tcp": {}\
   },\
   "HostConfig": {\
+    "Privileged": true,\
     "PortBindings": {\
-      "Privileged": true,\
       "8080/tcp": [\
         {\
           "HostPort": ""\
