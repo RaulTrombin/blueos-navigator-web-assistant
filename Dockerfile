@@ -33,7 +33,7 @@ LABEL company='{\
   "name": "Blue Robotics",\
   "email": "support@bluerobotics.com"\
 }'
-LABEL readme="https://raw.githubusercontent.com/raultrombin/blueos-navigator-webassistant/master/README.md"
+LABEL readme="https://raw.githubusercontent.com/raultrombin/blueos-navigator-web-assistant/master/README.md"
 LABEL type="education"
 LABEL tags='[\
   "rov",\
