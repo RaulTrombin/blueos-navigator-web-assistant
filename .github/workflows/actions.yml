@@ -1,0 +1,31 @@
+name: Test all targets
+
+on: [push, pull_request]
+
+permissions:
+  contents: write
+
+jobs:
+  deploy-blueos:
+          runs-on: ubuntu-22.04
+          steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+            - name: Prepare binaries
+              run: |
+                cd ./files/
+                chmod +x navigator-webassistant.*
+            - uses: BlueOS-community/Deploy-BlueOS-Extension@v1.4.0
+              name: Deploy BlueOS Extension
+              if: startsWith(github.ref, 'refs/tags/')
+              with:
+                docker-username: ${{ secrets.DOCKER_USERNAME }}
+                docker-password: ${{ secrets.DOCKER_PASSWORD }}
+                github-token: ${{ secrets.GITHUB_TOKEN }}
+                build-platforms: 'linux/arm/v7,linux/arm64/v8'
+                image-name: blueos_navigator_webassistant
+                author: Raul Victor Trombin
+                author-email: raulvtrombin@gmail.com
+                maintainer: Blue Robotics
+                maintainer-email: support@bluerobotics.com
+                skip-checkout: 'true'
