@@ -23,7 +23,7 @@ jobs:
                 docker-password: ${{ secrets.DOCKER_PASSWORD }}
                 github-token: ${{ secrets.GITHUB_TOKEN }}
                 build-platforms: 'linux/arm/v7,linux/arm64/v8'
-                image-name: blueos_navigator_webassistant
+                image-name: navigator-webassistant
                 author: Raul Victor Trombin
                 author-email: raulvtrombin@gmail.com
                 maintainer: Blue Robotics
