@@ -5,4 +5,4 @@ set -m
 
 echo "Starting navigator webassistant..."
 cd app
-su navigatorweb -c "./navigator-webassistant"
+./navigator-webassistant
